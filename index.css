@@ -1,0 +1,306 @@
+
+html{ scroll-behavior: smooth}
+
+body{
+ background-image: url(scjohnson1.jpg);
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+   overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-size: cover;
+   background-position: center;
+   
+   height: 100%;
+   height: 100%;
+   
+    
+}
+
+ /* Menu Burguer */
+ .navbar i {
+  font-size: 40;
+  color: red;
+  cursor: pointer;
+  display:none;
+}
+ 
+  #toggle-menu{
+    display: none;
+  }
+ 
+
+   
+
+.header{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  z-index: 30;
+  background-color: white;
+ 
+        
+
+} 
+
+.logo1{
+  width: 150px;
+  height: 100px;
+  margin-left: 15px;
+
+}
+
+.barra{
+ list-style: none;
+ display: flex;
+ align-items: center;
+ align-content: space-between;
+ justify-content: space-between;
+ gap: 50px;
+ flex-wrap: wrap;
+ text-align: center;
+
+ 
+}
+
+.main{
+  
+  
+  padding-top: 150px; 
+ }
+  
+  h1{
+      text-align: center;
+      font-size: 3em;
+      color: red;
+      margin: 10px;
+
+      }
+      
+      h2{
+          margin: 10px;
+          padding: 0px ;
+          color: red;
+          font-size: 1.5em;
+          text-align: center;
+      }
+
+
+
+.section-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+.info{
+  /* display:flex; */
+ width: 50%;
+ flex-wrap: wrap;
+
+}
+
+.texto{
+  width: 80%;
+  margin-left: 100px;
+  display: flex;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-end: 0px;
+  color: beige;
+  font-size: 1.5em;
+  text-align: center;}
+
+  /* .boton-section{margin-left: 0px !important;}
+  .boton-nosotros{margin-left: 0px !important;} */
+
+  /* Estilos botones secccion info */
+  .boton-section{
+    margin-left: 200px;
+    background-color: #192ac2;
+    color: white;
+    outline: 0;
+    border: 0;
+    width: 20%;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px 2px #091c88;
+    min-width: 100px
+}
+
+ .boton-nosotros{
+    margin-left: 15px;
+    background-color: #192ac2;
+    color: white;
+    outline: 0;
+    border: 0;
+    width: 20%;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 3px 2px #091c88;
+    min-width: 100px
+ }
+       
+.boton-nosotros:hover{
+    background-color:  #f7de82;
+    cursor: pointer;
+    color: #192ac2;
+    text-transform: uppercase;
+    transform: scale(1.2);
+}
+
+.boton-section:hover{
+    background-color:  #f7de82;
+    cursor: pointer;
+    color: #192ac2;
+    text-transform: uppercase;
+    transform: scale(1.2);
+}
+
+
+
+/*Estilo seccion galeria de imagenes  */
+.productos {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.productos1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.tarjetas {
+  position: relative;
+  color: #12acac;
+  background-color: aqua;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 0px 17px 2px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+  border-radius: 20px;
+  transition: transform 150ms ease-in;
+  min-width: 250px;   
+  
+}
+
+.tarjetas:hover{
+  transform: scale(1.2);
+  z-index: 20;
+
+  
+}
+
+.tarjetas img {
+  width: 150px;
+  height: 150px;
+  transition: transform 150ms ease-in;
+}
+
+.tarjetas img:hover{
+  cursor: pointer;
+  position: absolute;
+  transform: scale(1.2);
+  z-index: 20;
+}
+.tarjetas h3 {
+  font-family: 'LatoLight';
+  font-size: 1.5em;
+}
+
+
+
+
+
+footer{
+  
+  width: 100%;
+  padding: 1em;
+  align-self: flex-end;
+  color: rgb(2, 2, 95);
+  box-shadow: 0 0 25px 0 white;
+  bottom: 0px;
+  height: 80px;
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+}
+
+@media(max-width:767px)
+{  .header{
+  padding: 0px 50px 0px 10px;
+}
+.navbar i{
+  display: flex;
+  z-index: 9999;
+}
+.barra{
+  
+  background-color: darkgray;
+  flex-direction: column;
+  top: 100px;
+  right: 0;
+  width: 35%;
+  border-radius: 15px;
+  height: calc(100vh-100px);
+  z-index:9999;
+  display:none;
+  
+}
+
+#toggle-menu:checked + .barra{
+  display: none; 
+}
+
+.texto{
+  
+  width: 30%;
+  
+  display: flex;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-end: 0px;
+  color: beige;
+  font-size: 1.5em;
+ text-align: left;
+  text-align: justify;
+}
+ 
+}
+
+
+
+
+
+
+
+@media(max-width:992px){
+
+
+}
+
